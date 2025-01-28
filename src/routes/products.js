@@ -1,11 +1,17 @@
 const express = require('express')
 const router = express.Router()
+const filePath = 'productsList.json'
+const fs = require('fs')
 
 let products = [];
 let idCurrent = 1;
 
 //Obtener lista de productos
 router.get('/products',(req,res)=>{
+	//Crear archivo JSON
+	const productData = fs.writeFileSync(filePath, JSON.stringify(products, null, 2))
+	console.log(productData)
+	
 	return res.status(200).json({
 		msg:'lista de productos',
 		products
@@ -52,7 +58,7 @@ router.post('/product', (req,res)=>{
 	if(!title || !description || !code){
 		return res.status(400).json({
 			status: 'error',
-			msg: 'Ingresaste los datons incompletos'
+			msg: 'Ingresaste los datos incompletos'
 		})
 	}
 	idCurrent++;
@@ -62,6 +68,8 @@ router.post('/product', (req,res)=>{
 	 	msg:'Agregaste un nuevo producto',
 	 	products
 	})
+
+	
 })
 router.delete('/product/:id',(req,res)=>{
 	//Obtener el id de los paramétros de la url

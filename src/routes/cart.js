@@ -1,11 +1,16 @@
 const express = require('express')
 const router = express.Router()
+const filePath = 'productsCartList.json'
+const fs = require('fs')
 
 let productsCart = [];
 let idCurrent = 1;
 
 //Obtener lista de productos
 router.get('/products',(req,res)=>{
+	//Crear archivo JSON
+	const productsData = fs.writeFileSync(filePath, JSON.stringify(productsCart, null, 2))
+	console.log(productsData)
 	return res.status(200).json({
 		msg:'lista de productos',
 		productsCart

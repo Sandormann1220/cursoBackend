@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "goma",
+    "description": "de migajon",
+    "code": "B-113",
+    "price": "35",
+    "status": true,
+    "stock": 10,
+    "category": "Papelería",
+    "thumbnails": [
+      "foto1.jpg",
+      "foto2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "lapiz",
+    "description": "de migajon",
+    "code": "B-113",
+    "price": "35",
+    "status": true,
+    "stock": 10,
+    "category": "Papelería",
+    "thumbnails": [
+      "foto1.jpg",
+      "foto2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "libreta",
+    "description": "de migajon",
+    "code": "B-113",
+    "price": "35",
+    "status": true,
+    "stock": 10,
+    "category": "Papelería",
+    "thumbnails": [
+      "foto1.jpg",
+      "foto2.jpg"
+    ]
+  }
+]

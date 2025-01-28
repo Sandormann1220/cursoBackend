@@ -1,0 +1,37 @@
+[
+  {
+    "cid": 1,
+    "products": [
+      {
+        "title": "libreta",
+        "code": "AB12",
+        "quantity": 2
+      },
+      {
+        "title": "pegamento",
+        "code": "Ab15",
+        "quantiy": 1
+      }
+    ]
+  },
+  {
+    "cid": 2,
+    "products": [
+      {
+        "title": "lápiz",
+        "code": "AB12",
+        "quantity": 2
+      },
+      {
+        "title": "goma",
+        "code": "Ab15",
+        "quantiy": 1
+      },
+      {
+        "title": "papel",
+        "code": "Ab15",
+        "quantiy": 1
+      }
+    ]
+  }
+]
